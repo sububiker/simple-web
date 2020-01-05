@@ -26,10 +26,8 @@ metadata:
   name: simple-web-svc
 spec:
   ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
-    name: http
+  - protocol: TCP
+    port: 80
     targetPort: 80
     nodePort: 31003
   type: NodePort
