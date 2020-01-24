@@ -4,8 +4,6 @@ node{
   def ImageTag = "latest"
   def Creds	= " "
 
-
-  //try{
   stage('Checkout'){   
     git branch: 'master',
     credentialsId: '',
