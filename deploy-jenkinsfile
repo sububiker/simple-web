@@ -18,7 +18,7 @@ node{
 
   stage('Docker pull, Push') {
       sh 'docker login -u "sububiker" -p "Sububiker@123" docker.io'
-      sh "/usr/bin/docker pull ${ImageName}:${ImageTag} ."
+      sh "/usr/bin/docker pull ${ImageName}:${ImageTag}"
       sh "echo build successfully"
       sh "/usr/bin/docker push ${ImageName}"
      
