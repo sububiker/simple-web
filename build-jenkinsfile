@@ -1,0 +1,19 @@
+node{
+  def Namespace = "default"
+  def ImageName = "sububiker/suburepo"
+  def ImageTag = "latest"
+  def Creds	= "c4f389bf-75e7-4dc7-bebe-5b77219f5fcd"
+
+  stage('Checkout'){   
+    git branch: 'master',
+    credentialsId: 'fe1d364e-3655-4d1d-99b6-4ecc7f52c853',
+    url: 'https://github.com/sububiker/simple-web.git'
+    sh "git rev-parse --short HEAD > .git/commit-id"
+
+  }
+  
+  stage('Maven Build'){ 
+  
+  }
+
+}
