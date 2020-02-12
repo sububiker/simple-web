@@ -1,0 +1,6 @@
+---
+name: helm-demo
+version: 1.0.0
+description: control clusters
+maintainers:
+  - name: our helm demo

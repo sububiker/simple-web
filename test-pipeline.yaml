@@ -1,0 +1,33 @@
+apiVersion: apps/v1  
+kind: Deployment 
+metadata: 
+  name: subrat-deployment 
+spec: 
+  selector: 
+    matchLabels: 
+      app: subrat-app 
+  replicas: 5  
+  template:
+    metadata: 
+      labels: 
+        app: subrat-app
+    spec: 
+      containers: 
+      - name: subrat-app 
+        image: sububiker/subratimage:1.0.0
+        ports: 
+        - containerPort: 80 
+--- 
+ 
+kind: Service 
+apiVersion: v1 
+metadata: 
+  name: subrat-service 
+spec: 
+  selector: 
+    app: subrat-app 
+  ports: 
+  - protocol: TCP 
+    port: 80 
+    targetPort: 80 
+  type: LoadBalancer
