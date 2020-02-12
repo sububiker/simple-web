@@ -1043,3 +1043,11 @@ git init
 git branch
 git status
 git add
+git add .
+git commit
+git commit -m "latest files"
+git push
+git push https://github.com/sububiker/simple-web.git
+git push --set-upstream https://github.com/sububiker/simple-web.git master
+git pull
+git pull https://github.com/sububiker/simple-web.git
