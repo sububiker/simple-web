@@ -17,19 +17,20 @@ node{
   }
 
   stage('Docker Build, Push'){
-      sh "/usr/local/bin/docker --version"
-      sh "echo docker login localhost:8080"
-      sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
-      sh "/usr/local/bin/docker build -t ${ImageName}:${ImageTag} ."
-      sh "echo build successfully"
-      sh "/usr/local/bin/docker push ${ImageName}"
+      sh "docker --version"
+      //sh "echo docker login localhost:8080"
+      //sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
+      //sh "/usr/local/bin/docker build -t ${ImageName}:${ImageTag} ."
+      //sh "echo build successfully"
+      //sh "/usr/local/bin/docker push ${ImageName}"
 
     }
-    stage('Deploy on K8s'){
-        sh "/usr/local/bin/ansible localhost -m ping"
-        sh "echo ansible ran successfully"
-        sh "/usr/local/bin/kubectl get ns"
-        sh "/usr/local/bin/kubectl apply -f kubernetes-deployment.yaml --validate=false"
-    }
+  //  stage('Deploy on K8s'){
+  //      
+  //      sh "/usr/local/bin/ansible localhost -m ping"
+  //      sh "echo ansible ran successfully"
+  //      sh "/usr/local/bin/kubectl get ns"
+  //      sh "/usr/local/bin/kubectl apply -f kubernetes-deployment.yaml --validate=false"
+  //  }
  
 }
