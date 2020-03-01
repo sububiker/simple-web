@@ -1,7 +1,8 @@
 node{
-  def ImageName = " "
-  def ImageTag = "MS_RELEASE_VERSION"
-  def Creds	= " "
+  def Application_Name = "simple-web"
+ // def ImageName = " "
+ // def ImageTag = "MS_RELEASE_VERSION"
+ // def Creds	= " "
 
   stage('Checkout'){   
     //git branch: 'master',
