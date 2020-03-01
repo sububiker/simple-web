@@ -1,5 +1,6 @@
 node{
   def Application_Name = "simple-web"
+  def Branch ="master"
  // def ImageName = " "
  // def ImageTag = "MS_RELEASE_VERSION"
  // def Creds	= " "
