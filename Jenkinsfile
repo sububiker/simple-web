@@ -11,7 +11,7 @@ node{
     credentialsId: 'fe1d364e-3655-4d1d-99b6-4ecc7f52c853',
     //url: 'https://github.com/sububiker/simple-web.git'
     url: 'https://github.com/sububiker/simple-web.git'
-    //sh "git rev-parse --short HEAD > .git/commit-id"
+    sh "git rev-parse --short HEAD > .git/commit-id"
 
   }
   
