@@ -18,6 +18,7 @@ node{
 
   stage('Docker Build, Push'){
       sh "docker --version"
+          docker --version
       //sh "echo docker login localhost:8080"
       //sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
       //sh "/usr/local/bin/docker build -t ${ImageName}:${ImageTag} ."
