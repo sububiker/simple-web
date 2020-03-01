@@ -18,7 +18,7 @@ node{
       docker version
       //sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
       //docker build -t ${Application_Name}:${MS_RELEASE_VERSION} .
-      sh "echo build successfully"
+     // sh "echo build successfully"
       //docker push ${Application_Name}
 
     }
