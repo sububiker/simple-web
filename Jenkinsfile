@@ -1,6 +1,7 @@
 node{
   def Application_Name = "simple-web"
   def Branch ="master"
+  def MS_RELEASE_VERSION =333
 
   stage('Checkout'){   
     //git branch: 'master',
