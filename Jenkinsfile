@@ -9,7 +9,7 @@ node{
     credentialsId: 'f8b76910-5030-4fd0-990e-bb03927546e8',
     //url: 'https://github.com/sububiker/simple-web.git'
     url: 'https://github.com/sububiker/simple-web.git'
-    sh "git rev-parse --short HEAD > .git/commit-id"
+    git rev-parse --short HEAD > .git/commit-id
 
   }
   
