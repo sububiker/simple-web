@@ -1,9 +1,6 @@
 node{
   def Application_Name = "simple-web"
   def Branch ="master"
- // def ImageName = " "
- // def ImageTag = "MS_RELEASE_VERSION"
- // def Creds	= " "
 
   stage('Checkout'){   
     //git branch: 'master',
@@ -16,14 +13,12 @@ node{
   }
   
 
-
   stage('Docker Build, Push'){
       sh "docker --version"
-      //sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
-      //sh "/usr/local/bin/docker build -t ${ImageName}:${ImageTag} ."
+      sh 'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
       sh "docker build -t ${Application_Name + MS_BUILD_NUMBER}:${MS_RELEASE_VERSION} ."
-      //sh "echo build successfully"
-      //sh "/usr/local/bin/docker push ${ImageName}"
+      sh "echo build successfully"
+      sh "docker push ${Application_Name + MS_BUILD_NUMBER}"
 
     }
 
