@@ -4,7 +4,7 @@ node{
 
   stage('Checkout'){   
     //git branch: 'master',
-    git branch: 'Branch',
+    git branch: 'master',
     credentialsId: 'f8b76910-5030-4fd0-990e-bb03927546e8',
     //url: 'https://github.com/sububiker/simple-web.git'
     url: 'https://github.com/sububiker/simple-web.git'
