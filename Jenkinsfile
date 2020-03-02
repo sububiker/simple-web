@@ -1,3 +1,10 @@
+import groovy.json.JsonSluperClassic
+
+def stageName="
+def parsedJson=null
+def inputFile=null
+def jenkinsFolder='Jenkinsfiles'
+
 node{
   def Application_Name = "simple-web"
   def Branch ="master"
