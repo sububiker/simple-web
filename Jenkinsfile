@@ -23,7 +23,7 @@ node{
 
   stage('Docker Build, Push'){
     docker --version
-     'docker login -u "sububiker" -p "Sububiker@123*" docker.io'
+     'docker login -u "sububiker" -p "Sububiker@123" docker.io'
       docker build -t ${Application_Name}:${MS_RELEASE_VERSION} .
      echo "build successfully"
       //docker push ${Application_Name}
